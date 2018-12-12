@@ -1,0 +1,47 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "supervisor ./dist/app.js",
+    "build": "npm run tslint && npm run build-ts",
+    "build-ts": "tsc",
+    "watch": "npm run tslint && npm run watch-ts",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.4.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-jwt": "^3.5.1",
+    "koa-router": "^7.4.0",
+    "koa-static-cache": "^5.1.2",
+    "koa2-cors": "^2.0.6",
+    "md5": "^2.2.1",
+    "mysql": "^2.16.0",
+    "rxjs": "^6.3.3",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.3.0",
+    "@types/koa": "^2.0.47",
+    "@types/koa-bodyparser": "^5.0.2",
+    "@types/koa-jwt": "^3.3.0",
+    "@types/koa-router": "^7.0.35",
+    "@types/koa-static-cache": "^5.1.0",
+    "@types/koa2-cors": "^2.0.1",
+    "@types/md5": "^2.1.33",
+    "@types/moment": "^2.13.0",
+    "@types/mysql": "^2.15.5",
+    "@types/socket.io": "^2.1.2",
+    "nodemon": "^1.18.6",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  }
+}
